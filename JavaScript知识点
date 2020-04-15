@@ -1,0 +1,28 @@
+1.函数提升变量提升函数提升优先于变量提升
+
+2.当函数名和变量名相同时，如果变量没有被赋值，则函数生效，
+
+否则变量生效
+
+3.var s = function g(){}
+
+g是只读的g只能在函数内部访问
+
+4.this谁调用指向谁没人调用他就指向window
+
+5.this当函数创建的时候this指向 当前函数的实例
+
+6.简单的函数声明不能被new
+
+varS={
+  a:function(){
+    console.log(1);
+  }，
+  b(){
+    console.log(2);
+}
+var f = s.a.bind(this);new f();
+
+var P = s.b.bind(this);new p():
+
+7.es6简写的函数体不能被new this要注意 ! ! !
